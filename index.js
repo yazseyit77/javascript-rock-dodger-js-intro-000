@@ -51,6 +51,7 @@ function checkCollision(rock) {
                */) {
       return true
     }
+    return false;
   }
 }
 
