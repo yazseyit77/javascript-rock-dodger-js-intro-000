@@ -137,6 +137,18 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
+   switch (e.which) {
+   case LEFT_ARROW:
+     moveDodgerLeft();
+     e.preventDefault();
+     e.stopPropagation();
+     break;
+   case RIGHT_ARROW:
+     moveDodgerRight();
+     e.preventDefault();
+     e.stopPropagation();
+     break;
+  }
 }
 
 function moveDodgerLeft() {
